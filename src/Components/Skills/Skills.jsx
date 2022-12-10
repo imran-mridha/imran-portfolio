@@ -61,7 +61,7 @@ const Skills = () => {
     },
   ];
   return (
-    <section className="container mx-auto pb-20" id='skills'>
+    <section className="container mx-auto pb-20 pt-10" id='skills'>
       <div className="flex flex-col text-center">
         <h2 className="text-3xl lg:text-4xl font-medium lg:font-extrabold mb-3 ">
           My Skills

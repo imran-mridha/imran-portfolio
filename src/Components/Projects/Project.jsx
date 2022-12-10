@@ -5,7 +5,7 @@ const Project = ({ item }) => {
   const { id, name, image, technology, des, tag,live_link,repo_link } = item;
 
   return (
-    <div className="bg-tertiary p-5 rounded-lg flex flex-col justify-between">
+    <div data-aos="zoom-in" className="bg-tertiary p-5 rounded-lg flex flex-col justify-between">
       <img className="rounded h-60 w-full object-cover" src={image} alt="" />
       <p className="text-3xl my-3 uppercase font-semibold">{name}</p>
       <p>{des}</p>

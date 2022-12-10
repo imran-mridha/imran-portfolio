@@ -7,12 +7,12 @@ const About = () => {
     <section className="section" id="about">
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row gap-24 items-center">
-          <img
+          <img data-aos="fade-up-right"
             className="object-cover h-full w-[566px] md:mx-auto lg:mx-0 rounded-2xl"
             src={aboutImg2}
             alt=""
           />
-          <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
+          <div data-aos="zoom-in" className="flex flex-col items-center text-center lg:items-start lg:text-left">
             <div className="flex flex-col">
               <h2 className="text-3xl lg:text-4xl font-medium lg:font-extrabold mb-3 ">
                 About Me

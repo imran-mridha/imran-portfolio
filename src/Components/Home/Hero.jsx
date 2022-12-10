@@ -1,6 +1,7 @@
 import React from "react";
 import imranImg from "../../assets/iman1.png";
-import heroImg from '../../assets/hero/heroImg2.jpg'
+import heroImg from '../../assets/hero/heroImg2.jpg';
+import resume from '../../assets/hero/imran-resume.pdf'
 
 const Hero = () => {
   return (
@@ -16,13 +17,13 @@ const Hero = () => {
             Front-End Developer || Reactjs
           </p>
           <button className="btn btn-md bg-black hover:bg-secondary-hover transition-all">
-            <a href="/" download className="">
+            <a href={resume} download className="">
               Download Resume
             </a>
           </button>
         </div>
         <div className="hidden lg:flex flex-1 justify-end items-end">
-          <img className="" src={heroImg} alt="" />
+          <img data-aos="zoom-out" className="w-1/2 border-8 rounded border-accent" src={imranImg} alt="" />
           {/* <img
             className='object-cover h-full w-[500px] md:mx-auto lg:mx-0 rounded-2xl'
             src={heroImg}

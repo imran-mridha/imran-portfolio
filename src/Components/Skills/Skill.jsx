@@ -3,7 +3,7 @@ import React from "react";
 const Skill = ({ skill }) => {
   const { name, img, status } = skill;
   return (
-    <div className="bg-tertiary shadow-lg text-center py-10 rounded-lg text-black">
+    <div data-aos="zoom-in" className="bg-tertiary hover:-translate-y-5 duration-500 shadow-lg  text-center py-10 rounded-lg text-black">
       <div className="h-20 w-20 bg-[#17203d]  rounded-full mx-auto flex items-center">
         <img className="w-12 h-12 mx-auto" src={img} alt="" />
       </div>

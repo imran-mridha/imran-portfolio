@@ -2,14 +2,13 @@ import React, { useEffect, useState } from "react";
 import NavItems from "./NavItems";
 import NavMobile from "./NavMobile";
 // import { Link } from "react-scroll";
-import logo from '../../assets/logo.png'
-
+import logo from "../../assets/logo.png";
 
 const Nav = () => {
   const [bg, setBg] = useState(false);
 
   useEffect(() => {
-    window.addEventListener('scroll', () => {
+    window.addEventListener("scroll", () => {
       return window.scrollY > 50 ? setBg(true) : setBg(false);
     });
   });
@@ -78,20 +77,20 @@ const Nav = () => {
   //         Contact
   //       </NavLink>
   //     </li>
-      
+
   //   </>
   // );
   return (
     <header
       className={`${
-        bg ? 'bg-tertiary h-20' : 'h-24'
+        bg ? "bg-tertiary h-20 z-50" : "h-24"
       } flex items-center fixed top-0 w-full text-white   transition-all duration-300`}
     >
-      <div className='container mx-auto h-full flex items-center justify-between'>
+      <div className="container mx-auto h-full flex items-center justify-between">
         <img className="w-20 h-20" src={logo} alt="" />
         {/* <h2 className="text-4xl uppercase">Imran</h2> */}
         {/* nav */}
-        <div className='hidden lg:block'>
+        <div className="hidden lg:block">
           <NavItems />
         </div>
         {/* Socials */}
@@ -99,7 +98,7 @@ const Nav = () => {
           <Socials />
         </div> */}
         {/* nav mobile*/}
-        <div className='lg:hidden'>
+        <div className="lg:hidden">
           <NavMobile />
         </div>
       </div>

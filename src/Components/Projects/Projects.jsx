@@ -31,7 +31,7 @@ const Projects = () => {
   };
 
   return (
-    <section>
+    <section className="py-10" id='portfolio'>
       {/* projects nav */}
       <div className="flex flex-col text-center">
         <h2 className="text-3xl lg:text-4xl font-medium lg:font-extrabold mb-3 ">
@@ -60,7 +60,7 @@ const Projects = () => {
         </ul>
       </nav> */}
       {/* projects */}
-      <section className="grid gap-y-12 4xsm:grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 lg:gap-x-8 lg:gap-y-12">
+      <section className="grid gap-y-12 4xsm:grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 lg:gap-x-10 lg:gap-y-12">
         {projects.map((item) => {
           return <Project item={item} key={item.id} />;
         })}

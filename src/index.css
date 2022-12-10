@@ -41,3 +41,7 @@
     @apply text-accent;
   }
 }
+
+.scroll-to-top{
+  bottom: 80px !important;
+}
