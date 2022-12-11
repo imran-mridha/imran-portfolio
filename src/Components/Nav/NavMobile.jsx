@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import {NavLink} from 'react-router-dom'
 // import icons
 // import { XIcon } from '@heroicons/react/outline';
 // import { MenuAlt3Icon } from '@heroicons/react/outline';
@@ -117,6 +117,11 @@ const NavMobile = () => {
             </li>
           );
         })}
+        <li className='text-white uppercase hover:text-accent'>
+          <NavLink to='/blog'>
+            Blog
+          </NavLink>
+        </li>
         {/* <Socials /> */}
       </motion.ul>
     </nav>

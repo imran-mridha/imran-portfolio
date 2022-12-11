@@ -1,6 +1,7 @@
 import React from 'react';
 import { navigation } from '../../data';
 import { Link } from "react-scroll";
+import {NavLink} from 'react-router-dom'
 const NavItems = () => {
   
   return (
@@ -26,6 +27,11 @@ const NavItems = () => {
             </li>
           );
         })}
+        <li className='text-white uppercase hover:text-accent'>
+          <NavLink to='/blog'>
+            Blog
+          </NavLink>
+        </li>
       </ul>
     </nav>
   );

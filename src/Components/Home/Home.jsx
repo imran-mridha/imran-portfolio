@@ -1,5 +1,6 @@
 import React from "react";
 import About from "../About/About";
+import Blogs from "../Blogs/Blogs";
 import Contact from "../Contact/Contact";
 import Projects from "../Projects/Projects";
 import Skills from "../Skills/Skills";
@@ -13,7 +14,9 @@ const Home = () => {
       <About />
       <Skills />
       <Projects />
+      
       <Contact />
+      {/* <Blogs /> */}
       
     </div>
   );

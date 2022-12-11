@@ -5,6 +5,16 @@ import trainLang from '../src/assets/project/trainLanguageImg.png';
 import devQuize from '../src/assets/project/devQuize.jpg';
 import tourClub from '../src/assets/project/tourClub.webp';
 import newsNetwork from '../src/assets/project/newsNetwork.jpg';
+import car1 from '../src/assets/project/car1.png';
+import car2 from '../src/assets/project/car2.png';
+import car3 from '../src/assets/project/car3.png';
+import smile1 from '../src/assets/project/smile1.png';
+import smile2 from '../src/assets/project/smile2.png';
+import smile3 from '../src/assets/project/smile3.png';
+import lang1 from '../src/assets/project/lang1.png';
+import lang2 from '../src/assets/project/lang2.png';
+import lang3 from '../src/assets/project/lang3.png';
+
 
 import {
   FiYoutube,
@@ -50,7 +60,12 @@ export const navigation = [
     href: 'contact',
   },
 ];
-
+export const ContactNavigation = [
+  {
+    name: 'contact',
+    href: 'contact',
+  },
+];
 // projects
 export const projectsNav = [
   {
@@ -73,16 +88,22 @@ export const projectsNav = [
 export const projectsData = [
   {
     id: 1,
-    image: carGurus,
+    image: car1,
     name: 'Car Gurus',
     des: 'Cargurus is a full-stack website, Selling Second-Hand cars is the main motto of this site. This site has a dashboard for the admin panel & there is a total of the role, Buyer, Seller, & Admin.',
     category: 'React/node js',
     repo_link:
       'https://github.com/imran-mridha/car-gurus-client',
-    server_link: 'https://github.com/DiptaPal/bd-store-dot-com-server-side',
+    server_link: 'https://github.com/imran-mridha/car-gurus-server',
     live_link: 'https://car-gurus-bd.web.app/',
+    detail_img: [
+      car1,
+      car2,
+      car3,
+    ],
     technology: [
       'React',
+      'React Router Dom v6.4',
       'Node.JS',
       'Firebase',
       'Mongodb',
@@ -96,46 +117,69 @@ export const projectsData = [
       'JWT',
       'Tailwind',
       'Daisy UI',
+      'lottie-react',
+      'React loader Spinner',
+      'React-countup',
       'Social Login',
+      'React Toastify'
     ],
     tag: 'NEW',
   },
   {
     id: 2,
-    image: dantistImg,
+    image: smile1,
     name: 'Smile Builders',
     des: 'Smile builders is a full-stack website, focused on customer reviews, Providing dentist services. Here the user is able to give service feedback and can see others feedback, and also able to manage reviews.',
     category: 'React/node js',
     repo_link: 'https://github.com/imran-mridha/smile-builders-client',
-    server_link: 'https://github.com/DiptaPal/doctors-protal-server',
+    server_link: 'https://github.com/imran-mridha/smile-builders-server',
     live_link: 'https://smile-builders-24d63.web.app/',
+    detail_img: [
+      smile1,
+      smile2,
+      smile3,
+    ],
     technology: [
       'React',
+      'React-Router-Dom',
+      'React Icon',
+      'Swiperjs',
+      'React loader Spinner',
       'Node.JS',
+      'Date Fns',
       'Firebase',
       'Mongodb',
       'Authentication',
       'React-Query',
       'React Hooks Form',
       'Express Js',
-      'Date Fns',
-      'Day Piker',
       'JWT',
       'Tailwind',
-      'Daisy UI',
+      'Mambaui',
+      'Hyperui',
       'Social Login',
+      'React Toastify',
+      'Sweetalert2',
+      'lottie-react',
+      'React-countup',
+      'React-photo-view',
     ],
     tag: 'NEW',
   },
   {
     id: 3,
-    image: trainLang,
+    image: lang1,
     name: 'Train Language',
     des: 'Train Language is an e-learning platform where users can learn languages, they can download language course details in pdf.',
     category: 'React/node js',
     repo_link: 'https://github.com/imran-mridha/train-language-client',
-    server_link: 'https://github.com/DiptaPal/bengali-taste-server',
+    server_link: 'https://github.com/imran-mridha/train-language-server',
     live_link: 'https://train-language.web.app/',
+    detail_img: [
+      lang1,
+      lang2,
+      lang3,
+    ],
     technology: [
       'React',
       'Node.JS',
@@ -143,16 +187,13 @@ export const projectsData = [
       'Mongodb',
       'Authentication',
       'Express Js',
-      'Date Fns',
-      'JWT',
+      'React To Pdf',
+      'lottie-react',
       'Tailwind',
       'React Toastify',
       'React Icon',
       'Swiper JS',
-      'React-loader-spinner',
-      'React Aos',
       'React countup',
-      'React-photo-view',
       'Social Login',
     ],
     tag: '1 month ago',

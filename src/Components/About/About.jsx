@@ -1,18 +1,23 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import aboutImg2 from "../../assets/about2.png";
-
+import { ContactNavigation } from "../../data";
 
 const About = () => {
   return (
     <section className="section" id="about">
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row gap-24 items-center">
-          <img data-aos="fade-up-right"
+          <img
+            data-aos="fade-up-right"
             className="object-cover h-full w-[566px] md:mx-auto lg:mx-0 rounded-2xl"
             src={aboutImg2}
             alt=""
           />
-          <div data-aos="zoom-in" className="flex flex-col items-center text-center lg:items-start lg:text-left">
+          <div
+            data-aos="zoom-in"
+            className="flex flex-col items-center text-center lg:items-start lg:text-left"
+          >
             <div className="flex flex-col">
               <h2 className="text-3xl lg:text-4xl font-medium lg:font-extrabold mb-3 ">
                 About Me
@@ -30,8 +35,10 @@ const About = () => {
                 growth started as a web developer. Surprise!
               </p>
             </div>
-            <button className="btn btn-md bg-black hover:bg-secondary-hover transition-all">
-              Contact me
+            <button
+              className="btn btn-md bg-black hover:bg-secondary-hover"
+            >
+              <a target='_blank' rel="noreferrer" href="https://www.linkedin.com/in/imranmridha91/">Contact me</a>
             </button>
           </div>
         </div>
